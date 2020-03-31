@@ -6,16 +6,7 @@
         class-name="svg-icon hidden-md-and-up"
         @on-click="drawer = true"
       ></svg-icon>
-      <svg-icon
-        icon-class="logo"
-        style="width:48px;height:48px;margin-right:-5px;"
-      ></svg-icon>
-      <font style="color:#fff;margin-left:10px">D C</font>
-      <sub
-        class="hidden-md-and-down"
-        style="margin-left:10px;font-size:16px;color:orange"
-        >( Digital Visual for Cesium )</sub
-      >
+      <font style="color:#fff;margin-left:10px">Vue</font>
     </div>
     <div class="menu-h">
       <el-menu
@@ -26,10 +17,7 @@
       >
         <el-menu-item index="index">首页</el-menu-item>
         <el-menu-item index="examples">示例</el-menu-item>
-        <el-menu-item index="comps">组件</el-menu-item>
-        <el-menu-item index="tools">工具</el-menu-item>
         <el-menu-item index="docs">文档</el-menu-item>
-        <el-menu-item index="cesium">Cesium</el-menu-item>
       </el-menu>
       <img
         src="../assets/images/github.png"
@@ -44,11 +32,9 @@
         :visible.sync="drawer"
         size="50%"
       >
-        <p class="logo">
-          <svg-icon icon-class="logo" class="svg-icon"></svg-icon>
-        </p>
+        <p class="logo"></p>
         <p class="title">
-          D C
+          Vue
         </p>
         <el-menu
           :default-active="activeMenu"
@@ -61,15 +47,6 @@
           <el-menu-item index="examples">
             <svg-icon icon-class="examples" calss-name="menu-icon"></svg-icon
             >示例
-          </el-menu-item>
-          <el-menu-item index="comps">
-            <svg-icon icon-class="comps" calss-name="menu-icon"></svg-icon>组件
-          </el-menu-item>
-          <el-menu-item index="tools">
-            <svg-icon icon-class="tools" calss-name="menu-icon"></svg-icon>工具
-          </el-menu-item>
-          <el-menu-item index="cesium">
-            <svg-icon icon-class="link" calss-name="menu-icon"></svg-icon>Cesium
           </el-menu-item>
         </el-menu>
       </el-drawer>
@@ -100,18 +77,12 @@ export default {
   },
   methods: {
     menuSelectHandler(index) {
-      if (index === 'cesium') {
-        window.open('https://cesium.com/cesiumjs/')
-      } else {
-        this.$router.push(index).catch(err => {
-          err
-        })
-      }
+      this.$router.push(index).catch(err => {
+        err
+      })
       this.drawer = false
     },
-    gotoGitHub() {
-      window.open('https://github.com/Digital-Visual/dc-sdk')
-    }
+    gotoGitHub() {}
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="docs">
-    <iframe id="vue-md" src="http://dc.cavencj.cn/docs/api"></iframe>
+    <iframe id="vue-md" src="https://www.baidu.com"></iframe>
   </div>
 </template>
 <script>
