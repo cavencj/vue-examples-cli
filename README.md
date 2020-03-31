@@ -1,6 +1,4 @@
-# DV Home
-
-> 主页属于数字视觉的官网主页，主要包括说明、示例、文档、组件等。
+# VUE Examples Cli
 
 > 如果主页出现问题请联系 [Caven Chen](https://github.com/orgs/Digital-Visual/people/cavencj)
 
@@ -8,7 +6,7 @@
 
 ## 网站地址
 
-> http://dc.cavencj.cn
+> 示例网站 http://dc.cavencj.cn
 
 ## 安装
 
@@ -30,5 +28,5 @@ yarn run publish
 
 ## Mobile
 
-![width "30%"](http://dv.cavencj.cn/images/mobile_index.png)
-![width "30%"](http://dv.cavencj.cn/images/mobile_examples.png)
+![width "30%"](http://dc.cavencj.cn/images/mobile_index.png)
+![width "30%"](http://dc.cavencj.cn/images/mobile_examples.png)
