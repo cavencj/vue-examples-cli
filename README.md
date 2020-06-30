@@ -6,7 +6,7 @@
 
 ## 网站地址
 
-> 示例网站 http://dc.cavencj.cn
+> 示例网站 http://dc.dvgis.cn
 
 ## 安装
 
